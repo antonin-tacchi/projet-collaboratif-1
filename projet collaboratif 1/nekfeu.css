@@ -54,7 +54,7 @@
    }
 /*background*/
 body{
-    background-image: url("image/fond-pc.jpg");
+    background-image: url("image/beautiful-constellations-sky-full-stars.jpg");
     background-size: 120em;
 }
 @media screen and (max-width:768px) {
