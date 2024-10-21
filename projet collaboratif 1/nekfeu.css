@@ -52,14 +52,43 @@
     width: 1rem;
     height: 1rem;
    }
+/*background*/
+body{
+    background-image: url("image/fond-pc.jpg");
+    background-size: 120em;
+}
+@media screen and (max-width:768px) {
+    body{
+        background-image: url("image/fond-tel.jpg");
+    }
+    .paragraphe_1{
+        padding-top: 7em;
+    }
+}
 /* footer */
 footer{
     background-color: black;
     color: white;
     text-align: center;
+    
 }
 /* taille des images */
 img{
     width: 25em;
-    height: 40em;
+    height: 35em;
+}
+/*presentation*/
+.presentation{
+    display: flex;
+    justify-content: start;
+    padding-top: 3em;
+}
+/* paragraphe 1*/
+.paragraphe_1{
+    text-align: center;
+    text-align: start;
+    margin-right: 30em;
+    padding-left: 10em;
+    padding-top: 10em;
+    color: red;
 }
