@@ -53,10 +53,17 @@
     height: 1rem;
    }
 /*background*/
-body{
-    background-image: url("image/beautiful-constellations-sky-full-stars.jpg");
-    background-size: 120em;
-}
+#background-video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+     }
 @media screen and (max-width:768px) {
     body{
         background-image: url("image/fond-tel.jpg");
@@ -67,16 +74,16 @@ body{
 }
 /* footer */
 footer{
-    background-color: black;
-    color: white;
+    background-color: rgba(0, 125, 156, 0.493);
+    color: rgb(247, 247, 247);
     text-align: center;
     margin-top: 13em;
     
 }
 /* taille des images */
 img{
-    width: 25em;
-    height: 35em;
+    width: 20em;
+    height: 25em;
 }
 /*presentation*/
 .presentation{
@@ -96,13 +103,13 @@ img{
 }
 /*album*/
 .feu {
-    padding-right: 5em;
+    padding-right: 15em;
 }
 .etoile-vaga{
-    padding-left: 5em;
+    padding-left: 15em;
 }
 .album{
     display: flex;
     justify-content: center;
-    padding-top: 5em;
+    padding-top: 10em;
 }
