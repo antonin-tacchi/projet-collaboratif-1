@@ -6,32 +6,25 @@
     <link rel="stylesheet" href="event.css">
     <title>Actualité</title>
 </head>
-<header>
-    <nav>
-        <div class="menu">
-        <div id="menu">
-            <input type="checkbox" id="burger">
-          <div id="menu_links">
-            <div id="menu_link"><a href="#"><p>Home</p></a></div>
-            <div id="menu_link"><a href="nekfeu.html" style="text-decoration: none;"><p>Nekfeu</p></a></div>
-            <div id="menu_link"><a href="realisations.html" style="text-decoration: none;"><p>Luther</p></a></div>
-          </div>
-        </div>
-        </div>
-        <div class="marge">
-            <div class="Home">
-            <a href="#"><p>Home</p></a>
-        </div>
-            <div class="nekfeu">
-            <a href="nekfeu.html" style="text-decoration: none;"><p>Nekfeu</p></a>
-        </div>
-            <div class="luther">
-            <a href="#" style="text-decoration: none;"><p>Luther</p></a>
-        </div>
-        </div>
-    </nav>
-</header>
+
 <body>
+    <video id="background-video" autoplay loop muted poster="image/1118652_Map_Horizon_1920x1080.mp4">
+        <source src="image/1118652_Map_Horizon_1920x1080.mp4" type="video/mp4">
+      </video>
+    <!-- Navigation bar -->
+    <header class="header">
+        <!-- Hamburger icon -->
+        <input class="side-menu" type="checkbox" id="side-menu"/>
+        <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
+        <!-- Menu -->
+        <nav class="nav">
+            <ul class="menu">
+            <li><a href="#"><p>Home</p></a></li>
+            <li><a href="nekfeu.html" style="text-decoration: none;"><p>Nekfeu</p></a></li>
+            <li><a href="realisations.html" style="text-decoration: none;"><p>Luther</p></a></li>
+            </ul>
+        </nav>
+    </header>
     
 </body>
 <footer>
