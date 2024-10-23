@@ -163,6 +163,10 @@ a{text-decoration: none;}
      .luther{
         display: none;
      }
+     footer{
+      flex-wrap: wrap;
+      height: 15em;
+   }
 }
 @media screen and (min-width: 769px) {
     .menu{

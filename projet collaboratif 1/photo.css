@@ -209,6 +209,11 @@ a{text-decoration: none;}
         margin-left: 3em;
         margin-top: 75em;
        }
+       footer{
+        flex-wrap: wrap;
+        height: 15em;
+        margin-top: 35em;
+     }
 }
 /*Format de tablette*/
 @media screen and (min-width: 769px) and (max-width: 1439px) {

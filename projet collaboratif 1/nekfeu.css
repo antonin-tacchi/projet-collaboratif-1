@@ -200,7 +200,10 @@ h2{
          .luther{
             display: none;
          }
-         
+         footer{
+            flex-wrap: wrap;
+            height: 15em;
+         }
 }
 /*format de tablet*/
 @media screen and (min-width: 769px) and (max-width: 1439px) {
