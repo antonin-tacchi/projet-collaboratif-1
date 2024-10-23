@@ -10,8 +10,23 @@
     font-style: normal; 
 }
 p{
-    color: white;
+  color: white;
+  font-family: "Playwrite MX", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
+
+h1 {
+  font-family: "Vast Shadow", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+h2 {
+      font-family: "Aboreto", system-ui;
+      font-weight: 400;
+      font-style: normal;
+    }
 /*background*/
 #background-video {
     width: 100vw;
@@ -100,6 +115,33 @@ img{
 h3{
     color: bisque;
 }
+@media screen and (max-width:768px) and (min-width: 320px) {
+  #background-video {
+      width: 200vw;
+      height: 300vh;
+      object-fit: cover;
+      position: fixed;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      z-index: -1;
+       }
+       img{
+        height: 70%;
+        width: 70%;
+        margin-left: 3em;
+       }
+       .Home{
+        display: none;
+     }
+     .nekfeu{
+        display: none;
+     }
+     .luther{
+        display: none;
+     }
+      }
 @media screen and (min-width: 769px) {
     .menu{
         display: none;
