@@ -1,11 +1,73 @@
 /* Header */
-.marge {
-    background-color: rgba(0, 170, 162, 0.534);
-    color: white;
+nav 
+{
+    width: 100%;
+    height: 6;
+    background: #01aea694;
+}
+ 
+nav .main_pages 
+{
     display: flex;
     justify-content: space-around;
-    flex-wrap: wrap;
-    font-weight: 400;
+    align-items: center;
+}
+ 
+nav .main_pages a 
+{
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+ 
+nav a:hover 
+{
+    background: #01aea694
+}
+label, #toggle
+{
+    display: none;
+}
+ 
+@media all and (max-width: 991px)
+{
+    nav
+    {
+        height: 60px;
+    }
+ 
+    nav .main_pages 
+    {
+        display: none;
+        flex-direction: column;
+        background: #01aea694;
+        height: 220px;
+    }
+ 
+    nav .main_pages a {
+        width: 50%;
+    }
+ 
+    label 
+    {
+        width: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        font-size: 40px;
+        color: white;
+        cursor: pointer;
+    }
+ 
+    #toggle:checked + .main_pages {
+        display: flex;
+    }
 }
 p{
     color: white;
@@ -26,38 +88,6 @@ h1 {
         font-style: normal;
       }
   
-/*hamburger bouton*/
-body{
-    margin: 0px;
-    background-color: whitesmoke;
-  }
-  #burger{
-    vertical-align: middle;
-  }
-  #menu_links{
-    display: none;
-  }
-  #menu{
-    background-color: rgba(0, 170, 162, 0.534);
-    border: 1px solid black;
-    text-align: center;
-  }
-  #menu a{
-    text-decoration: none;
-    color: whitesmoke;
-    display: block;
-    padding: 1em;
-  }
-  #menu #menu_link:hover a{
-    background-color: rgba(0, 0, 0, 0.2);
-  }
-  #menu_bars{
-    text-align: right;
-  }
-  #burger:checked ~ #menu_links{
-    display: block;
-  }
-  
 /*background du site*/
 #background-video {
     width: 100vw;
@@ -72,11 +102,17 @@ body{
      }
 /* footer */
 footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 5em;
     background-color: rgba(0, 125, 156, 0.493);
     color: rgb(247, 247, 247);
-    text-align: center;
     margin-top: 3em;
-    
+    text-decoration: none;
+}
+a{
+  text-decoration: none;
 }
 /* taille des images */
 img{
@@ -149,6 +185,7 @@ h2{
          }
          h1{
             font-size: 5em;
+            margin-top: 3em;
          }
          img{
             width: 10em;
@@ -163,6 +200,7 @@ h2{
          .luther{
             display: none;
          }
+         
 }
 /*format de tablet*/
 @media screen and (min-width: 769px) and (max-width: 1439px) {
