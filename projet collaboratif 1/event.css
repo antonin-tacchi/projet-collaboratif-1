@@ -12,144 +12,100 @@
 p{
     color: white;
 }
+u{
+  color: white;
+}
 /*hamburger bouton*/
-:root{
-  --white: #f9f9f9;
-  --black: #36383F;
-  --gray: #85888C;
-} /* variables*/
-
-/* Reset */
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 body{
-  background-color: var(--white);
-  font-family: "Poppins", sans-serif;
+  margin: 0px;
+  background-color: whitesmoke;
 }
-a{
-  text-decoration: none;
+#burger{
+  vertical-align: middle; 
 }
-ul{
-  list-style: none;
-}
-.header{
-  display: flex;
-  justify-content: space-around;
-  background-color:rgba(0, 217, 255, 0.438);
-  box-shadow: 1px 1px 5px 0px var(--gray);
-  top: 0;
-  width: 100%;
-}
-/* Logo */
-.nav{
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  background-color: var(--black);
-  overflow: hidden;
-
-}
-.menu a{
-  display: block;
-  padding-left: 15em;
-  padding-right: 15em;
-  padding-top: 1em;
-  padding-bottom: 1em;
-  color: var(--white);
-}
-.menu a:hover{
-  background-color: var(--gray);
-}
-.nav{
-  max-height: 0;
-  transition: max-height .5s ease-out;
-}
-.hamb{
-  cursor: pointer;
-  float: right;
-  padding: 40px 20px;
-}/* Style label tag */
-
-.hamb-line {
-  background: var(--white);
-  display: block;
-  height: 2px;
-  position: relative;
-  width: 24px;
-
-} /* Style span tag */
-
-.hamb-line::before,
-.hamb-line::after{
-  background: var(--white);
-  content: '';
-  display: block;
-  height: 100%;
-  position: absolute;
-  transition: all .2s ease-out;
-  width: 100%;
-}
-.hamb-line::before{
-  top: 5px;
-}
-.hamb-line::after{
-  top: -5px;
-}
-
-.side-menu {
+#menu_links{
   display: none;
-} /* Hide checkbox */
-.side-menu:checked ~ nav{
-  max-height: 100%;
 }
-.side-menu:checked ~ .hamb .hamb-line {
-  background: transparent;
+#menu{
+  background-color: rgba(0, 170, 162, 0.534);
+  border: 1px solid black;
+  text-align: center;
 }
-.side-menu:checked ~ .hamb .hamb-line::before {
-  transform: rotate(-45deg);
-  top:0;
+#menu a{
+  text-decoration: none;
+  color: whitesmoke;
+  display: block;
+  padding: 1em;
 }
-.side-menu:checked ~ .hamb .hamb-line::after {
-  transform: rotate(45deg);
-  top:0;
+#menu #menu_link:hover a{
+  background-color: rgba(0, 0, 0, 0.2);
 }
-
-body:has(.side-menu:checked) {
-overflow: hidden;
+#menu_bars{
+  text-align: right;
 }
-@media (min-width: 768px) {
-  .nav{
-      max-height: none;
-      top: 0;
-      position: relative;
-      float: right;
-      width: fit-content;
-      background-color: transparent;
-  }
-  .menu li{
-      float: left;
-  }
-  .menu a:hover{
-      background-color: transparent;
-      color: var(--gray);
-
-  }
-
-  .hamb{
-      display: none;
-  }
-}
+#burger:checked ~ #menu_links{
+  display: block;
+} 
   /* footer */
 footer{
     background-color: rgba(0, 125, 156, 0.493);
     color: rgb(247, 247, 247);
     text-align: center;
-    margin-top: 13em;
+    margin-top: 5em;
     
 }
+h2{
+  color: white;
+  padding-left: 3em;
+}
+h3{
+  color: bisque;
+  text-align: center;
+  padding-left: 3em;
+}
+/*Disposition div film*/
+.Film{
+  margin-left: 5em;
+  margin-right: 5em;
+}
+.docu{
+  display: flex;
+  align-items: center;
+}
+.tns{
+  display: flex;
+  align-items: center;
+}
+.echappe{
+  display: flex;
+  align-items: center;
+}
+/*Disposition concert*/
+.concert{
+  margin-left: 5em;
+  margin-right: 5em;
+  padding-top: 2em;
+}
+.roi{
+  display: flex;
+  align-items: center;
+}
+.francofolie{
+  display: flex;
+  align-items: center;
+}
+.nime{
+  display: flex;
+  align-items: center;
+}
+/*Taille des images*/
+img{
+  width: 40em;
+  height: 20em;
+  border-radius: 10%;
+  padding-top: 3em;
+}
+/*Background*/
 #background-video {
   width: 100vw;
   height: 100vh;
@@ -161,3 +117,75 @@ footer{
   bottom: 0;
   z-index: -1;
    }
+   /*Format de telephone*/
+   @media screen and (max-width:768px) and (min-width: 320px) {
+    #background-video {
+        width: 200vw;
+        height: 300vh;
+        object-fit: cover;
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        z-index: -1;
+         }
+        .Home{
+           display: none;
+        }
+        .nekfeu{
+           display: none;
+        }
+        .luther{
+           display: none;
+        }
+        .Film{
+          display: flex;
+          flex-wrap: wrap;
+        }
+        .echappe{
+          display: flex;
+          flex-wrap: wrap;
+        }
+        .docu{
+          display: flex;
+          flex-wrap: wrap;
+        }
+        .tns{
+          display: flex;
+          flex-wrap: wrap;
+        }
+        .concert{
+          display: flex;
+          flex-wrap: wrap;
+        }
+        .francofolie{
+          display: flex;
+          flex-wrap: wrap;
+        }
+        .roi{
+          display: flex;
+          flex-wrap: wrap;
+        }
+        .nime{
+          display: flex;
+          flex-wrap: wrap;
+        }
+        img{
+          width: 12em;
+          height: 6em;
+          padding-left: none;
+        }
+        h2{
+          padding: 0;
+        }
+        h3{
+          padding: 0;
+        }
+}
+/*Format de pc*/
+   @media screen and (min-width: 769px) {
+    .menu{
+        display: none;
+    }
+}

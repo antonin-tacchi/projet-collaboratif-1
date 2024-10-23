@@ -16,7 +16,7 @@ body{
     background-color: whitesmoke;
   }
   #burger{
-    vertical-align: middle; /* Je suis maniaque désolé */
+    vertical-align: middle;
   }
   #menu_links{
     display: none;
@@ -42,7 +42,7 @@ body{
     display: block;
   }
   
-/*background*/
+/*background du site*/
 #background-video {
     width: 100vw;
     height: 100vh;
@@ -67,14 +67,14 @@ img{
     width: 20em;
     height: 25em;
 }
-/*presentation*/
+/*Photo et texte de la premiere partie de la page*/
 .presentation{
     display: flex;
     justify-content: start;
     padding-top: 3em;
     margin-left: 5%;
 }
-/* paragraphe 1*/
+/* paragraphe de la premiere parie de la page*/
 .paragraphe_1{
     text-align: center;
     text-align: start;
@@ -83,7 +83,7 @@ img{
     margin-left: 15%;
     margin-right: 15%;
 }
-/*album*/
+/*image des albums*/
 .feu {
     padding-right: 10em;
 }
@@ -97,7 +97,8 @@ img{
     margin-left: 5%;
     margin-right: 5%;
 }
-/*Titre*/
+/*Titre en milieu de page*/
+
 h1{
     text-align: center;
     color: bisque;
@@ -147,6 +148,7 @@ h2{
             display: none;
          }
 }
+/*format de tablet*/
 @media screen and (min-width: 769px) and (max-width: 1439px) {
     #background-video {
         width: 250vw;
@@ -166,6 +168,7 @@ h2{
             padding-left: 4em;
         }
 }
+/*format de pc*/
 @media screen and (min-width: 769px) {
         .menu{
             display: none;

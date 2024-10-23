@@ -51,8 +51,104 @@ footer{
     margin-top: 13em;
     
 }
+/*Background*/
+#background-video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+   }
+   /*Taille des images*/
+   img{
+    width: 75%;
+    height: 75%;
+   }
+   /*entiereté du body*/
+   .all{
+    display: flex;
+    justify-content: center;
+    margin-left: 4em;
+    margin-top: 7em;
+   }
+   h3{
+    color: bisque;
+   }
+   .wood{
+    padding-left: 2em;
+   }
+   .caritatif{
+    padding-left: 2em;
+   }
+/*Format telephone*/
+@media screen and (max-width:768px) and (min-width: 320px) {
+  #background-video {
+      width: 200vw;
+      height: 300vh;
+      object-fit: cover;
+      position: fixed;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      z-index: -1;
+       }
+       .presentation{
+          display: flex;
+          flex-wrap: wrap;
+       }
+       .album{
+          display: flex;
+          flex-wrap: wrap;
+       }
+       h1{
+          font-size: 5em;
+       }
+       img{
+          width: 10em;
+          height: 15em;
+       }
+       .Home{
+          display: none;
+       }
+       .nekfeu{
+          display: none;
+       }
+       .luther{
+          display: none;
+       }
+       .all{
+        display: flex;
+        flex-wrap: wrap;
+       }
+}
+/*Format de tablette*/
+@media screen and (min-width: 769px) and (max-width: 1439px) {
+  #background-video {
+      width: 250vw;
+      height: 350vh;
+      object-fit: cover;
+      position: fixed;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      z-index: -1;
+       }
+       .feu {
+          padding-right: 4em;
+      }
+      .etoile-vaga{
+          padding-left: 4em;
+      }
+}
+/*Format de pc*/
 @media screen and (min-width: 769px) {
-    .menu{
-        display: none;
-    }
+      .menu{
+          display: none;
+      }
 }
