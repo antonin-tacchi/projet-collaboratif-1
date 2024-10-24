@@ -33,7 +33,11 @@ label, #toggle
 {
     display: none;
 }
- 
+/* overlay spotify */
+ .iframe{
+  display: flex;
+  justify-content: space-around;
+ }
 @media all and (max-width: 991px)
 {
     nav
@@ -344,6 +348,7 @@ img{
 p{
     color: white;
 }
+/* Format Telephone */
 @media screen and (max-width:768px) and (min-width: 320px) {
     #background-video {
         width: 200vw;
@@ -377,7 +382,7 @@ p{
      .album3{
         display: flex;
         flex-wrap: wrap;
-        padding-top: 5m;
+        padding-top: 7em;
      }
      .album-all{
         flex-wrap: wrap;
@@ -395,12 +400,17 @@ p{
     .card3{
         display: none;
     }
+    .iframe{
+      flex-wrap: wrap;
+    }
 }
+/* menu format superieur au telephone */
 @media screen and (min-width: 769px) {
     .menu{
         display: none;
     }
 }
+/* Format tablette */
 @media screen and (max-width: 1024px) {
     .card1{
         display: none;
@@ -415,6 +425,7 @@ p{
         flex-wrap: wrap;
     }
 }
+/* Format pc et supérieur */
 @media screen and (min-width: 1440px) {
     .album1{
         display: none;
