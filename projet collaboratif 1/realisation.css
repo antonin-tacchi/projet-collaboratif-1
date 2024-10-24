@@ -124,12 +124,199 @@ img{
     justify-content: center;
     margin-top: 3em;
 }
-.son1{
-    padding-left: 2em;
-}
-.son1-1{
-    padding-left: 2em;
-}
+/* animation album feu */
+.card1 {
+    position: relative;
+    width: 300px;
+    height: 800px;
+    background: #01aea56a;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  
+  .card1 svg {
+    width: 48px;
+    fill: #333;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  
+  .card1:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card__content1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #01aea5;
+    opacity: 0;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  
+  .card1:hover .card__content1 {
+    transform: translate(-50%, -50%) rotate(0deg);
+    opacity: 1;
+  }
+  
+  .card__title1 {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+    font-weight: 700;
+  }
+  
+  .card__description1 {
+    margin: 10px 0 0;
+    font-size: 14px;
+    color: #777;
+    line-height: 1.4;
+  }
+  
+  .card1:hover svg {
+    scale: 0;
+    transform: rotate(-45deg);
+  }
+  a{
+    text-decoration: none;
+    color: white;
+  }
+  /* animation album cyborg */
+  .card2 {
+    position: relative;
+    width: 300px;
+    height: 675px;
+    background: #01aea571;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  
+  .card2 svg {
+    width: 48px;
+    fill: #333;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  
+  .card2:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card__content2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #01aea5;
+    opacity: 0;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  
+  .card2:hover .card__content2 {
+    transform: translate(-50%, -50%) rotate(0deg);
+    opacity: 1;
+  }
+  
+  .card__title2 {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+    font-weight: 700;
+  }
+  
+  .card__description2 {
+    margin: 10px 0 0;
+    font-size: 14px;
+    color: #777;
+    line-height: 1.4;
+  }
+  
+  .card2:hover svg {
+    scale: 0;
+    transform: rotate(-45deg);
+  }
+  /* annimation album etoile vagabonde */
+  .card3 {
+    position: relative;
+    width: 300px;
+    height: 1425px;
+    background: #01aea57d;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  
+  .card3 svg {
+    width: 48px;
+    fill: #333;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  
+  .card3:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card__content3{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #01aea5;
+    opacity: 0;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  
+  .card3:hover .card__content3 {
+    transform: translate(-50%, -50%) rotate(0deg);
+    opacity: 1;
+  }
+  
+  .card__title3 {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+    font-weight: 700;
+  }
+  
+  .card__description3 {
+    margin: 10px 0 0;
+    font-size: 14px;
+    color: #777;
+    line-height: 1.4;
+  }
+  
+  .card3:hover svg {
+    scale: 0;
+    transform: rotate(-45deg);
+  }
+  /* disposition des album */
+  .album-all{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5em;
+  }
 /*Album 2*/
 .album2{
     display: flex;
@@ -155,7 +342,7 @@ img{
     padding-left: 2em;
 }
 p{
-    color: bisque;
+    color: white;
 }
 @media screen and (max-width:768px) and (min-width: 320px) {
     #background-video {
@@ -192,13 +379,50 @@ p{
         flex-wrap: wrap;
         padding-top: 5m;
      }
+     .album-all{
+        flex-wrap: wrap;
+     }
      footer{
         flex-wrap: wrap;
         height: 15em;
      }
+     .card1{
+        display: none;
+     }
+     .card2{
+        display: none;
+    }
+    .card3{
+        display: none;
+    }
 }
 @media screen and (min-width: 769px) {
     .menu{
+        display: none;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .card1{
+        display: none;
+    }
+    .card2{
+        display: none;
+    }
+    .card3{
+        display: none;
+    }
+    .album-all{
+        flex-wrap: wrap;
+    }
+}
+@media screen and (min-width: 1440px) {
+    .album1{
+        display: none;
+    }
+    .album2{
+        display: none;
+    }
+    .album3{
         display: none;
     }
 }

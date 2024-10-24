@@ -33,7 +33,7 @@ label, #toggle
 {
     display: none;
 }
- 
+ /* format telephone     */
 @media all and (max-width: 991px)
 {
     nav
@@ -76,7 +76,7 @@ p{
     font-weight: 400;
     font-style: normal;
 }
-
+/* Personnalisation des caracteres */
 h1 {
     font-family: "Vast Shadow", serif;
     font-weight: 400;
@@ -86,6 +86,7 @@ h1 {
         font-family: "Aboreto", system-ui;
         font-weight: 400;
         font-style: normal;
+        color: white;
       }
   
 /*background du site*/
@@ -108,7 +109,7 @@ footer{
     height: 5em;
     background-color: rgba(0, 125, 156, 0.493);
     color: rgb(247, 247, 247);
-    margin-top: 3em;
+    margin-top: 7em;
     text-decoration: none;
 }
 a{
@@ -135,7 +136,61 @@ img{
     margin-left: 15%;
     margin-right: 15%;
 }
-/*image des albums*/
+/*image des albums pc*/
+.card {
+    width: 190px;
+    height: 254px;
+    background: rgba(211, 211, 211, 0.199);
+    position: absolute;
+    transition: .3s ease-in-out;
+    cursor: pointer;
+    box-shadow: 0px 0px 30px -10px rgba(0, 0, 0, 0.3);
+  }
+  
+  #c1 {
+    background-color: black;
+  }
+  
+  #c2 {
+    background-color: blue;
+  }
+  
+  #c3 {
+    background-color: red;
+  }
+  
+  .main:hover #c1 {
+    transform: translateX(-100px) rotate(-40deg);
+  }
+  
+  .main:hover #c2 {
+    transform: translateX(-50px) rotate(-30deg);
+  }
+  
+  .main:hover #c3 {
+    transform: translateX(0) rotate(-20deg);
+  }
+  
+  #c1:hover {
+    transform: translateX(-150px) rotate(0deg) !important;
+  }
+  
+  #c2:hover {
+    transform: translateX(-100px) rotate(0deg) !important;
+  }
+  
+  #c3:hover {
+    transform: translateX(-50px) rotate(0deg) !important;
+  }
+  
+  
+  .main {
+    display: grid;
+    height: 25vmax;
+    place-items: center;
+    
+    /*image des albums telephone*/
+  }
 .feu {
     padding-right: 10em;
 }
@@ -145,7 +200,6 @@ img{
 .album{
     display: flex;
     justify-content: center;
-    padding-top: 10em;
     margin-left: 5%;
     margin-right: 5%;
 }
@@ -156,12 +210,10 @@ h1{
     color: bisque;
     font-size: 10em;
 }
-h2{
-    color: white;
-}
 .menu2{
     padding-top: 7em;
 }
+
 /*Forma telephone*/
 @media screen and (max-width:768px) and (min-width: 320px) {
     #background-video {
@@ -184,8 +236,8 @@ h2{
             flex-wrap: wrap;
          }
          h1{
-            font-size: 5em;
-            margin-top: 3em;
+            font-size: 3em;
+            margin-top: 4em;
          }
          img{
             width: 10em;
@@ -204,6 +256,9 @@ h2{
             flex-wrap: wrap;
             height: 15em;
          }
+         .main{
+            display: none;
+         }
 }
 /*format de tablet*/
 @media screen and (min-width: 769px) and (max-width: 1439px) {
@@ -219,15 +274,27 @@ h2{
         z-index: -1;
          }
          .feu {
-            padding-right: 4em;
+            padding-right: 2.5em;
         }
         .etoile-vaga{
-            padding-left: 4em;
+            padding-left: 2.5em;
+        }
+        .main{
+            display: none;
         }
 }
 /*format de pc*/
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1439px) {
         .menu{
+            display: none;
+        }
+        .feu{
+            display: none;
+        }
+        .cyborg{
+            display: none;
+        }
+        .etoile-vaga{
             display: none;
         }
 }
